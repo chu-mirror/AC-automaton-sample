@@ -200,7 +200,7 @@ int main()
 Then the solution is clear, we can denote the number of safe sentences of length $l$ ended by state $s$ by $D(l, s)$,
 and $p(s)$ to say state $s$ is safe, if $p(s)$ we have
 $$
-D(l+1, s) = \sum_{\delta(S, c)=s}D(l, S) = \sum_{\delta(S, c)=s}\sum_cD(l,S) = \sum_{\delta(S, c)=s}n(c)D(l, S),
+D(l+1, s) = \sum_{\delta(S, c)=s}D(l, S) = \sum_{\delta(S, c)=s}\sum_cD(l,S) = \sum_{\delta(S, c)=s}n(S)D(l, S),
 $$
 else we have
 $$
